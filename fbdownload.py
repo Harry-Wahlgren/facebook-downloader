@@ -19,8 +19,6 @@ def main():
     with yaspin(text="Processing source code", color="green") as sp:
         try:
             r = requests.get(inputUrl)
-#            with open('./file1.txt', 'w') as writer:
-#                writer.write(r.text)
         except:
             sp.color = "red"
             sp.fail("x")
